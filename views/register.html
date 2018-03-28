@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%= title %>
+  </title>
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
+  <style type="text/css">
+  body,html{
+    background: url('images/background-image.jpg');
+    background-size: cover;
+
+  }
+    .m15 {
+      margin: 25px 15px;
+    }
+
+    .tc {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .myform{
+      margin-top: 220px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form class="col-sm-offset-4 col-sm-4 myform form-horizontal" role="form" method="post" onsubmit="return false">
+      <fieldset>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <p class="tc">注册信息</p>
+          </div>
+          <div class="panel-body m15">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-user"></span>
+                </span>
+                <input type="text" class="form-control" id="username" name="username" placeholder="请输入用户名" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-lock"></span>
+                </span>
+                <input type="text" class="form-control" id="password" name="password" placeholder="请输入密码" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-lock"></span>
+                </span>
+                <input type="text" class="form-control" id="password1" name="password1" placeholder="请再次输入密码" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block" id="register1">注册</button>
+            </div>
+            <div class="form-group">
+              <button type="button" class="btn btn-info col-sm-2 col-sm-offset-10" id="login1">登录</button>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="javascripts/register.js"></script>
+</body>
+
+</html>

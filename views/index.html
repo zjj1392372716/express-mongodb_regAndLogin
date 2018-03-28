@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Meils testApp</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    html {
+      background: url('images/background-image.jpg');
+      background-size: cover;
+    }
+
+    .title {
+      z-index: 10;
+      width: 100%;
+      padding: 30px 0px;
+      text-align: center;
+      font-size: 70px;
+      color: #ee5353;
+    }
+    .btns{
+      width: 100%;
+      text-align:center;
+    }
+    .btns a{
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="title">
+    <%= title %>
+  </h1>
+  <p class="btns">
+    <a class="btn btn-success" href="/login">登录 </a>
+    <a class="btn btn-success" href="/register">注册</a>
+  </p>
+</body>
+
+</html>
